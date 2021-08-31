@@ -52,10 +52,4 @@ anchorArray.forEach((element, index) => {
 });
 
 const cta_h1 = document.querySelector(".cta .cta-text h1");
-cta_h1.innerHTML = siteContent.cta.h1.replaceAll(" ", "<br>");
-
-const cta_button = document.querySelector(".cta .cta-text button");
-cta_button.innerHTML = siteContent.cta.button;
-
-const cta_image = document.querySelector("#cta-img");
-cta_image.setAttribute("src", siteContent.cta["img-src"]);
+cta_h1.innerHTML =  siteContent

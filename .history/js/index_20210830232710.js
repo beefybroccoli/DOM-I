@@ -58,4 +58,4 @@ const cta_button = document.querySelector(".cta .cta-text button");
 cta_button.innerHTML = siteContent.cta.button;
 
 const cta_image = document.querySelector("#cta-img");
-cta_image.setAttribute("src", siteContent.cta["img-src"]);
+cta_image.setAttribute("src", siteContent.cta["img-src"])
