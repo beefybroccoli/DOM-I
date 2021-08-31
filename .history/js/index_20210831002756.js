@@ -42,7 +42,7 @@ const siteContent = {
   },
 };
 
-//---------------add content to header section---------------------------
+//--------------------------------------------------------------------
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
@@ -75,20 +75,17 @@ document.querySelectorAll("nav a").forEach((element) => {
   element.setAttribute("style", "color:green;");
 });
 
-//--------------add conent to cta section--------------------------------
-//select h1 in ".cta .cta-text"
+
 const cta_h1 = document.querySelector(".cta .cta-text h1");
 cta_h1.innerHTML = siteContent.cta.h1.replaceAll(" ", "<br>");
 
-// select button in ".cta .cta-text"
 const cta_button = document.querySelector(".cta .cta-text button");
 cta_button.innerHTML = siteContent.cta.button;
 
-//select cta image with id "cta-img"
 const cta_image = document.querySelector("#cta-img");
 cta_image.setAttribute("src", siteContent.cta["img-src"]);
 
-//---------------add content to mainContent topContent-------------------
+//--------------------------------------------------------------------
 const mainContent_topContent_textContent_h4 = document.querySelector(
   ".main-content .top-content .text-content h4"
 );
@@ -101,7 +98,8 @@ const mainContent_topContent_textContent_p = document.querySelector(
 mainContent_topContent_textContent_p.innerHTML =
   siteContent["main-content"]["features-content"];
 
-//---------------add content to mainContent topContent-------------------
+//--------------------------------------------------------------------
+
 const mainContent_topContent_textContent_h4_2nd = document.querySelector(
   ".main-content .top-content .text-content:nth-child(2) h4"
 );
@@ -114,12 +112,12 @@ const mainContent_topContent_textContent_p_2nd = document.querySelector(
 mainContent_topContent_textContent_p_2nd.innerHTML =
   siteContent["main-content"]["about-content"];
 
-//----------------add image to middle-img tag-----------------------------
+//-----------------------------------------------------------------
 
 const mid_image = document.querySelector("#middle-img");
 mid_image.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
-//---------------add content to mainContent bottomContent-------------------
+//-----------------------------------------------------------------
 const mainContent_bottomContent_textContent_h4_1st = document.querySelector(
   ".main-content .bottom-content .text-content:nth-child(1) h4"
 );
@@ -132,7 +130,7 @@ const mainContent_bottomContent_textContent_p_1st = document.querySelector(
 mainContent_bottomContent_textContent_p_1st.innerHTML =
   siteContent["main-content"]["services-content"];
 
-//---------------add content to mainContent bottomContent-------------------
+//-----------------------------------------------------------------
 const mainContent_bottomContent_textContent_h4_2nd = document.querySelector(
   ".main-content .bottom-content .text-content:nth-child(2) h4"
 );
@@ -145,7 +143,7 @@ const mainContent_bottomContent_textContent_p_2nd = document.querySelector(
 mainContent_bottomContent_textContent_p_2nd.innerHTML =
   siteContent["main-content"]["product-content"];
 
-//---------------add content to mainContent bottomContent-------------------
+//-----------------------------------------------------------------
 const mainContent_bottomContent_textContent_h4_3rd = document.querySelector(
   ".main-content .bottom-content .text-content:nth-child(3) h4"
 );
@@ -158,8 +156,7 @@ const mainContent_bottomContent_textContent_p_3rd = document.querySelector(
 mainContent_bottomContent_textContent_p_3rd.innerHTML =
   siteContent["main-content"]["vision-content"];
 
-//--------------add content to contact section-----------------------------
-//add content to contact header
+//----------------------------------------------------------------
 const container_contact_h4 = document.querySelector(".container .contact h4");
 container_contact_h4.innerHTML = siteContent.contact["contact-h4"];
 
@@ -167,24 +164,20 @@ const container_contact_p_1st = document.querySelector(
   ".container .contact p:nth-child(2)"
 );
 
-//add content to street
 container_contact_p_1st.innerHTML = siteContent.contact.address.replace(
   "Street",
   "Street<br>"
 );
 
-//add content to phone number
 const container_contact_p_2nd = document.querySelector(
   ".container .contact p:nth-child(3)"
 );
 container_contact_p_2nd.innerHTML = siteContent.contact.phone;
 
-//ad content to email
 const container_contact_p_3rd = document.querySelector(
   ".container .contact p:nth-child(4)"
 );
 container_contact_p_3rd.innerHTML = siteContent.contact.email;
 
-//add content to copyright notice
 const footer_p = document.querySelector(".container footer p");
 footer_p.innerHTML = siteContent.footer.copyright;

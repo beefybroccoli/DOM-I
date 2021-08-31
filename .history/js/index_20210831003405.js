@@ -42,7 +42,7 @@ const siteContent = {
   },
 };
 
-//---------------add content to header section---------------------------
+//--------------------------------------------------------------------
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
@@ -75,7 +75,7 @@ document.querySelectorAll("nav a").forEach((element) => {
   element.setAttribute("style", "color:green;");
 });
 
-//--------------add conent to cta section--------------------------------
+//--------------add conent to 
 //select h1 in ".cta .cta-text"
 const cta_h1 = document.querySelector(".cta .cta-text h1");
 cta_h1.innerHTML = siteContent.cta.h1.replaceAll(" ", "<br>");

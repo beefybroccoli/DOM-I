@@ -42,7 +42,7 @@ const siteContent = {
   },
 };
 
-//---------------add content to header section---------------------------
+//--------------------------------------------------------------------
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
@@ -75,7 +75,6 @@ document.querySelectorAll("nav a").forEach((element) => {
   element.setAttribute("style", "color:green;");
 });
 
-//--------------add conent to cta section--------------------------------
 //select h1 in ".cta .cta-text"
 const cta_h1 = document.querySelector(".cta .cta-text h1");
 cta_h1.innerHTML = siteContent.cta.h1.replaceAll(" ", "<br>");
@@ -88,7 +87,7 @@ cta_button.innerHTML = siteContent.cta.button;
 const cta_image = document.querySelector("#cta-img");
 cta_image.setAttribute("src", siteContent.cta["img-src"]);
 
-//---------------add content to mainContent topContent-------------------
+//--------------------------------------------------------------------
 const mainContent_topContent_textContent_h4 = document.querySelector(
   ".main-content .top-content .text-content h4"
 );
@@ -102,6 +101,7 @@ mainContent_topContent_textContent_p.innerHTML =
   siteContent["main-content"]["features-content"];
 
 //---------------add content to mainContent topContent-------------------
+
 const mainContent_topContent_textContent_h4_2nd = document.querySelector(
   ".main-content .top-content .text-content:nth-child(2) h4"
 );

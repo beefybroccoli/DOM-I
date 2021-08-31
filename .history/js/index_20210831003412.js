@@ -42,7 +42,7 @@ const siteContent = {
   },
 };
 
-//---------------add content to header section---------------------------
+//--------------------------------------------------------------------
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
