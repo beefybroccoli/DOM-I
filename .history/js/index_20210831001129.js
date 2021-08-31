@@ -42,7 +42,6 @@ const siteContent = {
   },
 };
 
-//--------------------------------------------------------------------
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
@@ -139,11 +138,8 @@ container_contact_h4.innerHTML = siteContent.contact["contact-h4"];
 const container_contact_p_1st = document.querySelector(
   ".container .contact p:nth-child(2)"
 );
-
-container_contact_p_1st.innerHTML = siteContent.contact.address.replace(
-  "Street",
-  "Street<br>"
-);
+const text_temp = 
+container_contact_p_1st.innerHTML = siteContent.contact.address;
 
 const container_contact_p_2nd = document.querySelector(
   ".container .contact p:nth-child(3)"
